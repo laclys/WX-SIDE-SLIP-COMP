@@ -1,0 +1,23 @@
+<view class='container'
+  bindtouchstart='handleTouchstart'
+  bindtouchmove='handleTouchMove'
+  bindtouchend='handleTouchEnd'>
+  <view class='content-wrapper'
+    style='transform: translateX(-{{translateX}}px); transition: transform {{ transitionTime / 1000 }}s'>
+    <slot></slot>
+  </view>
+  <view class='btn-wrapper' style='padding-top: {{ btnTop }}px' >
+    <view class='btn {{ item.type }}'
+      style='transform: translateX({{ item.type === "del" ? translateXDel : translateXEdit }}px); transition : transform {{ transitionTime / 1000 }}s'
+      wx:key='index' 
+      wx:for='{{ _btnArr }}' 
+      wx:for-item='item'
+      data-type='{{ item.type }}' 
+      bindtap='handleTap'>
+      <view class='btn-content {{ item.type }}'
+        data-type='{{ item.type }}'>
+        {{ item.text }}
+      </view>
+    </view>
+  </view>
+</view>

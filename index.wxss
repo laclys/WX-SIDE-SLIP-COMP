@@ -1,0 +1,51 @@
+/*
+ * @Author: Lac 
+ * @Date: 2018-09-25 23:40:24 
+ * @Last Modified by:   Lac 
+ * @Last Modified time: 2018-09-25 23:40:24 
+ */
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.container .content-wrapper {
+  position: relative;
+  z-index: 99;
+}
+
+.container .btn-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.container .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 140rpx;
+  font-size: 26rpx;
+  color: #FFF;
+}
+
+.container .btn .btn-content {
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.container .btn .btn-content.edit {
+  background: #000F32;
+}
+
+.container .btn .btn-content.del {
+  background: #F05A6B;
+}
