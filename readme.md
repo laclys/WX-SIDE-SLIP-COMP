@@ -4,3 +4,5 @@ WX-SIDE-SLIP—COMP
 ### USAGE
 
 对应page中json引入之后，在wxml文件中`<side-slip-comp id='{{ unique_id }}' edit del >content<side-slip-comp>`使用
+
+![](./demo.jpg)
